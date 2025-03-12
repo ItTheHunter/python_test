@@ -6,7 +6,7 @@ This repository deploys services to a Kubernetes cluster using Helm. Deployments
 
 In the file [`helm/autopilot/prod-values.yaml`](./helm/autopilot/prod-values.yaml), update the `resources` section:
 
-```yaml
+
 resources:
   limits:
     cpu: 1000m
