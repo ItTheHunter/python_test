@@ -16,14 +16,13 @@ resources:
     memory: 3000Mi
 
 ```
-limits: The maximum CPU and memory available to the container.
+limits: The maximum CPU and memory available to the container.  
+Example: cpu: 1000m = 1 CPU core  
+Example: memory: 3000Mi = 3 GB  
+requests: The minimum guaranteed CPU and memory reserved for the container.  
 
-Example: cpu: 1000m = 1 CPU core
-Example: memory: 3000Mi ≈ 3 GB
-requests: The minimum guaranteed CPU and memory reserved for the container.
-
-Example: Increase CPU/Memory
-To increase to 2 CPUs and 4 GB of memory:
+Example: Increase CPU/Memory  
+to increase to 2 CPUs and 4 GB of memory.
 
 ```yaml
 resources:
