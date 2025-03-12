@@ -1,6 +1,15 @@
-# Autopilot Helm Chart
+This repository sets up services in a Kubernetes cluster via helm.
 
-This repository deploys services to a Kubernetes cluster using Helm. Deployments are managed via automated pipelines.
+Services are deployed by automated pipelines.
+
+Systems services charts: argocd, cert manager, ingress-nginx.
+
+Projects applications charts: argoapps.
+
+Pipelines are separated by branches:
+- test-env - deploys to test-environment in AWS cluster using a test domain
+- preprod - deploys to prod AWS cluster using a temporary domain
+- prod - deploys to prod AWS cluster with a production domain
 
 ## Where to Change CPU and Memory
 
